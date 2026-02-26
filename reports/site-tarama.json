@@ -1,0 +1,68 @@
+{
+  "sayfalar": [
+    {
+      "sayfa": "Ana Sayfa",
+      "url": "https://tarihicengelkoytatlicisi.com.tr",
+      "durum": 200,
+      "sure_ms": 1892,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "Sepet",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/sepet",
+      "durum": 404,
+      "sure_ms": 546,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "Checkout",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/checkout",
+      "durum": 200,
+      "sure_ms": 938,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "Kargo Bilgi",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/kargo-ve-teslimat",
+      "durum": 200,
+      "sure_ms": 612,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "İletişim",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/iletisim",
+      "durum": 200,
+      "sure_ms": 645,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "Hakkımızda",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/hakkimizda",
+      "durum": 200,
+      "sure_ms": 553,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "Üye Girişi",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/uyelik/giris",
+      "durum": 404,
+      "sure_ms": 563,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "Sitemap",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/sitemap.xml",
+      "durum": 200,
+      "sure_ms": 447,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "Robots",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/robots.txt",
+      "durum": 200,
+      "sure_ms": 574,
+      "hiz_degerlendirme": "✓ Hızlı"
+    }
+  ],
+  "sitemap_url_sayisi": 0
+}

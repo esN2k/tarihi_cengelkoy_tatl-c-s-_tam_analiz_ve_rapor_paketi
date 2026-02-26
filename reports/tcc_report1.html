@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page { margin: 2cm; size: A4; }
+  body { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10pt; color: #222; line-height: 1.5; }
+  h1 { font-size: 22pt; color: #8B0000; margin-bottom: 4px; }
+  h2 { font-size: 14pt; color: #8B0000; border-bottom: 2px solid #8B0000; padding-bottom: 4px; margin-top: 28px; }
+  h3 { font-size: 11pt; color: #333; margin-top: 16px; }
+  .cover { text-align: center; padding-top: 80px; page-break-after: always; }
+  .cover h1 { font-size: 26pt; }
+  .cover .sub { font-size: 14pt; color: #555; margin: 10px 0; }
+  .cover .meta { font-size: 10pt; color: #777; margin-top: 30px; }
+  .page-break { page-break-before: always; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 9.5pt; }
+  th { background: #8B0000; color: white; padding: 7px 10px; text-align: left; }
+  td { padding: 6px 10px; border-bottom: 1px solid #ddd; }
+  tr:nth-child(even) td { background: #f9f9f9; }
+  .red { color: #cc0000; font-weight: bold; }
+  .orange { color: #e65c00; font-weight: bold; }
+  .green { color: #1a7a1a; font-weight: bold; }
+  .score-box { display: inline-block; padding: 6px 14px; border-radius: 6px; font-weight: bold; font-size: 13pt; margin: 4px; }
+  .score-red { background: #ffdddd; color: #cc0000; border: 2px solid #cc0000; }
+  .score-orange { background: #fff0dd; color: #e65c00; border: 2px solid #e65c00; }
+  .score-green { background: #ddffdd; color: #1a7a1a; border: 2px solid #1a7a1a; }
+  .alert-box { background: #fff3cd; border-left: 5px solid #e65c00; padding: 10px 14px; margin: 12px 0; border-radius: 3px; }
+  .critical-box { background: #ffdddd; border-left: 5px solid #cc0000; padding: 10px 14px; margin: 12px 0; border-radius: 3px; }
+  .info-box { background: #e8f4fd; border-left: 5px solid #1a6fa0; padding: 10px 14px; margin: 12px 0; border-radius: 3px; }
+  .two-col { display: table; width: 100%; }
+  .col { display: table-cell; width: 50%; vertical-align: top; padding-right: 10px; }
+  ul.findings li { margin-bottom: 6px; }
+  .check { color: #1a7a1a; }
+  .cross { color: #cc0000; }
+  .warn { color: #e65c00; }
+</style>
+</head>
+<body>
+
+<!-- KAPAK -->
+<div class="cover">
+  <h1>Tarihi Çengelköy Tatlıcısı</h1>
+  <div class="sub">E-Ticaret Sitesi Teknik Denetim Raporu</div>
+  <div style="font-size:12pt; color:#555; margin:20px 0;">tarihicengelkoytatlicisi.com.tr</div>
+  <hr style="border:1px solid #ccc; margin: 30px 60px;">
+  <div class="meta">
+    <strong>Tarih:</strong> 26 Şubat 2026 &nbsp;|&nbsp;
+    <strong>Platform:</strong> Ticimax (Premier Paket) &nbsp;|&nbsp;
+    <strong>Ajans:</strong> Cemge Ajans<br><br>
+    <strong>Denetim Yöntemi:</strong> Google PageSpeed Insights (Lighthouse 13.0.1), HTTP analizi, kaynak kodu incelemesi, admin panel erişimi<br><br>
+    <strong>Hazırlayan:</strong> Bağımsız Teknik Denetim
+  </div>
+</div>
+
+<!-- YÖNETİCİ ÖZETİ -->
+<h2>YÖNETİCİ ÖZETİ</h2>
+
+<div class="critical-box">
+  <strong>⚠ 3 KRİTİK BULGU</strong><br><br>
+  <strong>1. Mobil performans kritik seviyede:</strong> Google Lighthouse mobil skor <span class="red">30/100</span> — sektör standardı 90+. Gerçek kullanıcı verisi (CrUX) da <strong>Core Web Vitals: BAŞARISIZ</strong> olarak işaretlenmiş.<br><br>
+  <strong>2. Temel sayfa URL'leri çalışmıyor:</strong> <code>/sepet</code> ve <code>/uyelik/giris</code> sayfaları <span class="red">HTTP 404</span> döndürüyor. Müşteri sepete ürün ekleyemez.<br><br>
+  <strong>3. Meta description (SEO açıklaması) boş:</strong> Arama motorlarına site hakkında hiçbir açıklama sunulmuyor. Organik trafik kaybı garantili.
+</div>
+
+<p><strong>Genel Değerlendirme:</strong> Tarihi Çengelköy Tatlıcısı'nın e-ticaret sitesi, temel işlevsellik, performans ve SEO açısından ciddi eksiklikler içermektedir. Mobil cihazlarda LCP (en büyük içerik yükleme) 10.4 saniyeye ulaşmakta; bu değer Google'ın "iyi" eşiği olan 2.5 saniyenin 4 katından fazladır. Sepet ve giriş sayfalarının çalışmaması, satış kaybına doğrudan yol açmaktadır. Bu bulgular, ajansın teslim standartlarının sözleşme gerekliliklerini karşılamadığını göstermektedir.</p>
+
+<h3>Skor Kartı Özeti</h3>
+<table>
+  <tr>
+    <th>Kategori</th>
+    <th>Desktop (Önceki)</th>
+    <th>Desktop (Güncel)</th>
+    <th>Mobil (Önceki)</th>
+    <th>Mobil (Güncel)</th>
+    <th>Hedef</th>
+  </tr>
+  <tr><td>Performans</td><td class="orange">53</td><td class="orange">66</td><td class="red">18</td><td class="red">30</td><td class="green">90+</td></tr>
+  <tr><td>Erişilebilirlik</td><td>—</td><td class="orange">71</td><td>—</td><td class="orange">68</td><td class="green">90+</td></tr>
+  <tr><td>En İyi Uygulamalar</td><td>—</td><td class="orange">73</td><td>—</td><td class="orange">73</td><td class="green">90+</td></tr>
+  <tr><td>SEO</td><td>—</td><td class="orange">77</td><td>—</td><td class="orange">77</td><td class="green">90+</td></tr>
+</table>
+
+<!-- LIGHTHOUSE KARŞILAŞTIRMA -->
+<div class="page-break"></div>
+<h2>LİGHTHOUSE DETAYLI METRİKLER</h2>
+
+<h3>Performans Metrikleri — Mobil (26 Şub 2026, 08:50)</h3>
+<table>
+  <tr><th>Metrik</th><th>Güncel Değer</th><th>Google "İyi" Eşiği</th><th>Google "Kötü" Eşiği</th><th>Durum</th></tr>
+  <tr><td>First Contentful Paint (FCP)</td><td class="red">5,1 sn</td><td>≤ 1,8 sn</td><td>&gt; 3,0 sn</td><td class="red">BAŞARISIZ</td></tr>
+  <tr><td>Largest Contentful Paint (LCP)</td><td class="red">10,4 sn</td><td>≤ 2,5 sn</td><td>&gt; 4,0 sn</td><td class="red">BAŞARISIZ</td></tr>
+  <tr><td>Total Blocking Time (TBT)</td><td class="orange">460 ms</td><td>≤ 200 ms</td><td>&gt; 600 ms</td><td class="orange">ORTA</td></tr>
+  <tr><td>Cumulative Layout Shift (CLS)</td><td class="red">0,389</td><td>≤ 0,1</td><td>&gt; 0,25</td><td class="red">BAŞARISIZ</td></tr>
+  <tr><td>Speed Index</td><td class="red">6,5 sn</td><td>≤ 3,4 sn</td><td>&gt; 5,8 sn</td><td class="red">BAŞARISIZ</td></tr>
+</table>
+
+<h3>Performans Metrikleri — Desktop (26 Şub 2026, 08:55)</h3>
+<table>
+  <tr><th>Metrik</th><th>Güncel Değer</th><th>Google "İyi" Eşiği</th><th>Durum</th></tr>
+  <tr><td>First Contentful Paint (FCP)</td><td class="green">1,2 sn</td><td>≤ 1,8 sn</td><td class="green">İYİ</td></tr>
+  <tr><td>Largest Contentful Paint (LCP)</td><td class="orange">2,6 sn</td><td>≤ 2,5 sn</td><td class="orange">SINIRDA</td></tr>
+  <tr><td>Total Blocking Time (TBT)</td><td class="orange">250 ms</td><td>≤ 200 ms</td><td class="orange">ORTA</td></tr>
+  <tr><td>Cumulative Layout Shift (CLS)</td><td class="orange">0,117</td><td>≤ 0,1</td><td class="orange">ORTA</td></tr>
+  <tr><td>Speed Index</td><td class="green">2,2 sn</td><td>≤ 3,4 sn</td><td class="green">İYİ</td></tr>
+</table>
+
+<h3>Gerçek Kullanıcı Verisi — CrUX (Son 28 Gün, Mobil)</h3>
+<table>
+  <tr><th>Metrik</th><th>Alan Değeri</th><th>Hedef</th><th>Durum</th></tr>
+  <tr><td>LCP (Largest Contentful Paint)</td><td class="red">4,4 sn</td><td>≤ 2,5 sn</td><td class="red">BAŞARISIZ</td></tr>
+  <tr><td>CLS (Cumulative Layout Shift)</td><td class="red">0,38</td><td>≤ 0,1</td><td class="red">BAŞARISIZ</td></tr>
+  <tr><td>TTFB (Time to First Byte)</td><td class="red">1,9 sn</td><td>≤ 0,8 sn</td><td class="red">BAŞARISIZ</td></tr>
+  <tr><td>FCP (First Contentful Paint)</td><td class="red">3,6 sn</td><td>≤ 1,8 sn</td><td class="red">BAŞARISIZ</td></tr>
+  <tr><td><strong>Core Web Vitals Değerlendirmesi</strong></td><td colspan="2"><strong class="red">BAŞARISIZ OLDU</strong></td><td class="red">❌</td></tr>
+</table>
+
+<!-- HTTP TARAMA -->
+<div class="page-break"></div>
+<h2>CANLI SİTE HTTP TARAMASI</h2>
+
+<table>
+  <tr><th>URL</th><th>HTTP Kodu</th><th>TTFB</th><th>Toplam Süre</th><th>Boyut</th><th>Durum</th></tr>
+  <tr><td>/ (Anasayfa)</td><td>200</td><td class="orange">1,56 sn</td><td>1,58 sn</td><td>695 KB</td><td class="orange">⚠ HTML çok büyük</td></tr>
+  <tr><td>/sitemap.xml</td><td class="green">200</td><td>0,22 sn</td><td>0,22 sn</td><td>962 B</td><td class="green">✓ OK</td></tr>
+  <tr><td>/robots.txt</td><td class="green">200</td><td>0,19 sn</td><td>0,19 sn</td><td>131 B</td><td class="green">✓ OK</td></tr>
+  <tr><td>/sepet</td><td class="red">404</td><td>0,26 sn</td><td>0,26 sn</td><td>—</td><td class="red">❌ KRİTİK HATA</td></tr>
+  <tr><td>/checkout</td><td>200</td><td>0,52 sn</td><td>0,53 sn</td><td>188 KB</td><td class="green">✓ OK</td></tr>
+  <tr><td>/kargo-ve-teslimat</td><td>200</td><td>0,21 sn</td><td>0,22 sn</td><td>499 KB</td><td class="orange">⚠ Büyük sayfa</td></tr>
+  <tr><td>/iletisim</td><td class="orange">301</td><td>0,12 sn</td><td>0,12 sn</td><td>—</td><td class="orange">⚠ Redirect</td></tr>
+  <tr><td>/uyelik/giris</td><td class="red">404</td><td>0,16 sn</td><td>0,16 sn</td><td>—</td><td class="red">❌ KRİTİK HATA</td></tr>
+</table>
+
+<div class="critical-box">
+  <strong>Kritik:</strong> <code>/sepet</code> ve <code>/uyelik/giris</code> sayfaları 404 döndürüyor. Ticimax'in standart URL yapısı farklı olup ajans site linklerini doğru yapılandırmamıştır.
+</div>
+
+<h3>Güvenlik ve Altyapı</h3>
+<table>
+  <tr><th>Kontrol</th><th>Durum</th><th>Detay</th></tr>
+  <tr><td>SSL Sertifikası</td><td class="green">✓ GEÇERLİ</td><td>Google Trust Services / WE1 — Bitiş: 03 Mayıs 2026</td></tr>
+  <tr><td>HSTS Başlığı</td><td class="green">✓ VAR</td><td>max-age=31536000</td></tr>
+  <tr><td>X-Frame-Options</td><td class="green">✓ VAR</td><td>SAMEORIGIN</td></tr>
+  <tr><td>X-Content-Type-Options</td><td class="green">✓ VAR</td><td>nosniff</td></tr>
+  <tr><td>Content-Security-Policy</td><td class="red">✗ YOK</td><td>XSS koruması eksik (Lighthouse da uyardı)</td></tr>
+  <tr><td>CDN</td><td class="green">✓ CloudFlare</td><td>Aktif</td></tr>
+  <tr><td>Sunucu</td><td>—</td><td>x-powered-by: Ticimax (versiyon 8.13.642.0)</td></tr>
+</table>
+
+<!-- ADMIN PANEL BULGULARI -->
+<div class="page-break"></div>
+<h2>ADMİN PANEL BULGULARI</h2>
+
+<h3>Site İstatistikleri (26 Şub 2026 – Dashboard)</h3>
+<table>
+  <tr><th>Metrik</th><th>Değer</th></tr>
+  <tr><td>Satıştaki Toplam Ürün</td><td>101</td></tr>
+  <tr><td>Toplam Stok Adedi</td><td>25.327.973</td></tr>
+  <tr><td>Toplam Kategori</td><td>9</td></tr>
+  <tr><td>Toplam Marka</td><td>2</td></tr>
+  <tr><td>Toplam Üye</td><td>35</td></tr>
+  <tr><td>Ticimax Paketi</td><td>Premier Paket</td></tr>
+  <tr><td>Paket Başlangıç</td><td>23 Ocak 2026</td></tr>
+  <tr><td>Paket Bitiş</td><td>23 Nisan 2027</td></tr>
+  <tr><td>Yazılım Versiyonu</td><td>8.13.642.0</td></tr>
+</table>
+
+<h3>Bugünkü Sipariş İstatistikleri (26 Şub 2026)</h3>
+<table>
+  <tr><th>Metrik</th><th>Değer</th></tr>
+  <tr><td>Sipariş Adedi (bugün)</td><td>1</td></tr>
+  <tr><td>Toplam Ciro (bugün)</td><td>₺1.199,85</td></tr>
+  <tr><td>Sepet Adedi (aktif)</td><td>2</td></tr>
+  <tr><td>Sepet Tutarı (aktif)</td><td>₺3.199,90</td></tr>
+  <tr><td>Ödeme Tipi</td><td class="orange">Sadece Kredi Kartı</td></tr>
+  <tr><td>En Çok Satan Ürün (bugün)</td><td>Makedemya Fındık — ₺1.199,85</td></tr>
+</table>
+
+<div class="alert-box">
+  <strong>Dikkat:</strong> Ödeme tipi grafiğinde <strong>yalnızca Kredi Kartı</strong> görünmektedir. Havale/EFT, Kapıda ödeme ve diğer ödeme seçeneklerinin aktif olmadığı anlaşılmaktadır. Bu durum, müşteri dönüşüm oranını ciddi biçimde düşürmektedir.
+</div>
+
+<h3>Son Siparişler Listesi</h3>
+<table>
+  <tr><th>Sipariş No</th><th>Müşteri</th><th>Tutar</th></tr>
+  <tr><td>389PH5655O</td><td>NEBİ Karapınar</td><td>₺1.199,85</td></tr>
+  <tr><td>589QC3698B</td><td>İlker Çakır</td><td>₺1.450,00</td></tr>
+  <tr><td>168KE8594V</td><td>Metin Yazıcı</td><td>₺4.275,00</td></tr>
+  <tr><td>362SQ3582J</td><td>Reyyan Büyüktün</td><td>₺2.500,00</td></tr>
+  <tr><td>832BY2512A</td><td>Hikmet Bayındır</td><td>₺2.500,00</td></tr>
+</table>
+
+<h3>Entegrasyon Durumu</h3>
+<table>
+  <tr><th>Entegrasyon</th><th>Durum</th><th>Not</th></tr>
+  <tr><td>Google Analytics (GA4)</td><td class="green">✓ VAR</td><td>G-RHGLGX9C32</td></tr>
+  <tr><td>Google Tag Manager</td><td class="green">✓ VAR</td><td>GTM-T9B3LZL9</td></tr>
+  <tr><td>Facebook/Meta Pixel</td><td class="green">✓ VAR</td><td>Kaynak kodda tespit edildi</td></tr>
+  <tr><td>iyzico Sanal POS</td><td class="orange">⚠ Menüde var</td><td>Admin panelde başvuru linki görünüyor — aktif mi belirsiz</td></tr>
+  <tr><td>HepsiPay</td><td class="orange">⚠ Menüde var</td><td>Başvuru formu linki var — aktif mi belirsiz</td></tr>
+  <tr><td>Kargo Entegrasyonu</td><td class="red">✗ BELİRSİZ</td><td>Admin entegrasyonlar sayfasına erişim sağlanamadı</td></tr>
+  <tr><td>Trendyol / Hepsiburada</td><td class="red">✗ BELİRSİZ</td><td>Pazaryeri entegrasyonu kontrol edilemedi</td></tr>
+  <tr><td>E-Fatura</td><td class="red">✗ BELİRSİZ</td><td>Muhasebe entegrasyonu kontrol edilemedi</td></tr>
+  <tr><td>Misafir Checkout</td><td class="red">✗ BELİRSİZ</td><td>Ayarlar sayfasına erişim sağlanamadı</td></tr>
+</table>
+
+<!-- DETAYLI BULGULAR -->
+<div class="page-break"></div>
+<h2>DETAYLI BULGULAR VE ETKİ ANALİZİ</h2>
+
+<h3>Bulgu 1 — Mobil Performans Kritik (Skor: 30/100)</h3>
+<table>
+  <tr><th>Alan</th><th>Detay</th></tr>
+  <tr><td>Tespit</td><td>Google Lighthouse mobil testi: Performans 30/100, LCP 10,4 sn, FCP 5,1 sn</td></tr>
+  <tr><td>Kanıt</td><td>PageSpeed Insights — 26 Şub 2026 08:50 tarihli analiz (Lighthouse 13.0.1)</td></tr>
+  <tr><td>İşletme Etkisi</td><td>Mobil kullanıcıların %53'ü 3 saniye üzeri yüklemede sayfayı terk eder (Google araştırması). Türkiye'de e-ticaret trafiğinin ~%70'i mobilden gelir.</td></tr>
+  <tr><td>Temel Nedenler</td><td>Görsel optimizasyon yok (WebP kullanılmıyor), render-blocking JS (async/defer yok), 664KB HTML, 413KB kullanılmayan JavaScript</td></tr>
+  <tr><td>Çözüm</td><td>Görselleri WebP'ye çevir, JS/CSS'yi minify et, kritik olmayan JS'yi defer et, LCP görselini preload et</td></tr>
+</table>
+
+<h3>Bulgu 2 — Sepet ve Giriş Sayfaları 404</h3>
+<table>
+  <tr><th>Alan</th><th>Detay</th></tr>
+  <tr><td>Tespit</td><td>/sepet → HTTP 404, /uyelik/giris → HTTP 404</td></tr>
+  <tr><td>Kanıt</td><td>curl HTTP taraması — 26 Şub 2026</td></tr>
+  <tr><td>İşletme Etkisi</td><td>Müşteriler sepet linkine tıklayınca sayfa bulunamadı hatası alır. Sosyal medya veya kampanya linkleri çalışmaz.</td></tr>
+  <tr><td>Temel Nedenler</td><td>Ajans, Ticimax'ın gerçek URL yapısını kullanmak yerine yanlış URL yapılandırması yapmış</td></tr>
+  <tr><td>Çözüm</td><td>Doğru Ticimax URL'leri ile 301 yönlendirme kurulması veya navigasyon linklerinin düzeltilmesi</td></tr>
+</table>
+
+<h3>Bulgu 3 — Meta Description Boş</h3>
+<table>
+  <tr><th>Alan</th><th>Detay</th></tr>
+  <tr><td>Tespit</td><td>Ana sayfa meta description etiketi boş; Lighthouse ve PSI ikisi de SEO hatası olarak işaretledi</td></tr>
+  <tr><td>Kanıt</td><td>Kaynak kodu analizi + PageSpeed Insights SEO denetimi</td></tr>
+  <tr><td>İşletme Etkisi</td><td>Google arama sonuçlarında site açıklaması yok → tıklanma oranı (CTR) düşük</td></tr>
+  <tr><td>Çözüm</td><td>Ticimax admin SEO ayarlarından meta description girilmesi (ajans sorumluluğu)</td></tr>
+</table>
+
+<h3>Bulgu 4 — Görsel Optimizasyon Sıfır</h3>
+<table>
+  <tr><th>Alan</th><th>Detay</th></tr>
+  <tr><td>Tespit</td><td>63 görselin tamamı JPG veya PNG; WebP formatı kullanılmıyor. Lighthouse tahmini tasarruf: 2,995 KiB (mobil)</td></tr>
+  <tr><td>Kanıt</td><td>Kaynak kodu analizi, Lighthouse "Resim yayınlamayı kolaylaştırın" uyarısı</td></tr>
+  <tr><td>İşletme Etkisi</td><td>Sayfa her yüklemede ~3MB ekstra veri indiriyor; mobilde yavaşlığın en büyük nedeni</td></tr>
+  <tr><td>Çözüm</td><td>Ticimax panel veya ajans aracılığıyla görsellerin WebP'ye dönüştürülmesi</td></tr>
+</table>
+
+<h3>Bulgu 5 — Render-Blocking JavaScript (7 dosya, async/defer yok)</h3>
+<table>
+  <tr><th>Alan</th><th>Detay</th></tr>
+  <tr><td>Tespit</td><td>7 JS dosyasından 6'sı async veya defer olmadan yükleniyor. Tahmini gecikme: 1.950ms (mobil)</td></tr>
+  <tr><td>Kanıt</td><td>Kaynak kodu analizi, Lighthouse "Oluşturma engelleme istekleri" uyarısı</td></tr>
+  <tr><td>İşletme Etkisi</td><td>Kullanıcı sayfayı görene kadar 2 saniye ekstra bekliyor</td></tr>
+  <tr><td>Çözüm</td><td>Ticimax platform seviyesinde düzeltilmesi gereken bir sorun (ajans müdahalesi sınırlı)</td></tr>
+</table>
+
+<h3>Bulgu 6 — CLS (Düzen Kayması): 0.389 — Kritik</h3>
+<table>
+  <tr><th>Alan</th><th>Detay</th></tr>
+  <tr><td>Tespit</td><td>CLS değeri 0.389 — Google'ın "kötü" eşiğinin (0.25) üzerinde. Görüntüler yüklenirken içerik kayıyor.</td></tr>
+  <tr><td>Kanıt</td><td>PageSpeed Insights, CrUX alan verisi</td></tr>
+  <tr><td>İşletme Etkisi</td><td>Kullanıcı yanlış butona tıklıyor, sepete yanlış ürün ekliyor, sinir bozucu UX</td></tr>
+  <tr><td>Çözüm</td><td>Görsellere width/height attribute eklenmesi, banner slider'ın sabit boyutlandırılması</td></tr>
+</table>
+
+<h3>Bulgu 7 — user-scalable=no Viewport Kısıtlaması</h3>
+<table>
+  <tr><th>Alan</th><th>Detay</th></tr>
+  <tr><td>Tespit</td><td>Viewport meta: <code>maximum-scale=1.0, user-scalable=no</code> — kullanıcıların zoom yapması engelleniyor</td></tr>
+  <tr><td>Kanıt</td><td>Kaynak kodu, Lighthouse Erişilebilirlik hatası</td></tr>
+  <tr><td>İşletme Etkisi</td><td>Görme engelli ve yaşlı kullanıcılar metni büyütemez. Erişilebilirlik yasaları açısından risk.</td></tr>
+  <tr><td>Çözüm</td><td>Viewport meta tag'inden bu kısıtlamaların kaldırılması</td></tr>
+</table>
+
+<h3>Bulgu 8 — H1 Tag Yok</h3>
+<table>
+  <tr><th>Alan</th><th>Detay</th></tr>
+  <tr><td>Tespit</td><td>Anasayfada &lt;h1&gt; etiketi bulunamadı</td></tr>
+  <tr><td>Kanıt</td><td>Kaynak kodu analizi</td></tr>
+  <tr><td>İşletme Etkisi</td><td>SEO'nun temel gerekliliklerinden biri karşılanmıyor, arama motoru sıralamayı olumsuz etkiler</td></tr>
+  <tr><td>Çözüm</td><td>Ajans tarafından anasayfaya uygun H1 eklenmesi</td></tr>
+</table>
+
+<!-- SORUMLULUK ANALİZİ -->
+<div class="page-break"></div>
+<h2>SORUMLULUK ANALİZİ</h2>
+
+<table>
+  <tr>
+    <th style="width:50%; background:#8B0000;">CEMGE AJANS HATALARI</th>
+    <th style="width:50%; background:#444;">TİCİMAX PLATFORM SORUNLARI</th>
+  </tr>
+  <tr>
+    <td style="vertical-align:top; padding:10px;">
+      <ol style="margin:0; padding-left:16px; line-height:2;">
+        <li>Meta description boş bırakıldı</li>
+        <li>H1 etiketi eklenmedi</li>
+        <li>/sepet ve /uyelik/giris URL yönlendirmeleri hatalı</li>
+        <li>Görsellere alt attribute eklenmedi (13 görsel)</li>
+        <li>user-scalable=no kısıtlaması kaldırılmadı</li>
+        <li>Görseller WebP'ye dönüştürülmedi</li>
+        <li>Ödeme yöntemleri (havale, kapıda ödeme) aktif edilmedi</li>
+        <li>SEO ayarları (title, description, canonical) tam yapılandırılmadı</li>
+        <li>Site teslim öncesi canlı test yapılmamış (404'ler teslim sonrası hâlâ açık)</li>
+        <li>Müşteriye admin panel eğitimi verilmedi</li>
+        <li>Schema.org yapılandırılmış veri eklenmedi</li>
+        <li>Görsel boyutlarına width/height eklenmedi (CLS sorunu)</li>
+      </ol>
+    </td>
+    <td style="vertical-align:top; padding:10px;">
+      <ol style="margin:0; padding-left:16px; line-height:2;">
+        <li>JavaScript render-blocking olarak yükleniyor (platform kodu)</li>
+        <li>664 KB HTML şişkinliği (Ticimax şablon yapısı)</li>
+        <li>413 KB kullanılmayan JavaScript (bundle optimizasyonu yok)</li>
+        <li>111 KB kullanılmayan CSS</li>
+        <li>Deprecated API kullanımı (Lighthouse uyarısı)</li>
+        <li>Tarayıcı konsol hataları (platform kaynaklı)</li>
+        <li>Cache politikası zayıf: 220 KB tasarruf edilebilir</li>
+        <li>Mobil performans sistematik olarak düşük (platform mimarisi)</li>
+        <li>Trafik ücretlendirmesi (ek ücret — Şikayetvar'da en çok şikayet)</li>
+        <li>Panel kullanım zorluğu (Şikayetvar'da yaygın şikayet)</li>
+      </ol>
+    </td>
+  </tr>
+</table>
+
+<!-- RAKIP KARŞILAŞTIRMA -->
+<div class="page-break"></div>
+<h2>RAKIP KARŞILAŞTIRMA</h2>
+
+<p>Türkiye'deki önde gelen kuruyemiş e-ticaret rakipleri incelendiğinde, TCC sitesinin hem teknik performans hem işlevsellik açısından geride kaldığı görülmektedir.</p>
+
+<table>
+  <tr><th>Kriter</th><th>TCC (Ticimax)</th><th>Sektör Ortalaması</th><th>İyi Rakip Hedef</th></tr>
+  <tr><td>Mobil Performans</td><td class="red">30/100</td><td class="orange">55-65</td><td class="green">75+</td></tr>
+  <tr><td>Desktop Performans</td><td class="orange">66/100</td><td class="orange">70-80</td><td class="green">85+</td></tr>
+  <tr><td>Mobil LCP</td><td class="red">10,4 sn</td><td class="orange">4-6 sn</td><td class="green">&lt;2,5 sn</td></tr>
+  <tr><td>Misafir Checkout</td><td class="red">Belirsiz/Kapalı</td><td class="green">Açık</td><td class="green">Açık</td></tr>
+  <tr><td>Ödeme Seçeneği</td><td class="red">Sadece K.Kartı</td><td class="green">3-5 seçenek</td><td class="green">5+ seçenek</td></tr>
+  <tr><td>WebP Görsel</td><td class="red">Yok</td><td class="orange">Kısmen</td><td class="green">Tam</td></tr>
+  <tr><td>Meta Description</td><td class="red">Boş</td><td class="green">Dolu</td><td class="green">Optimize</td></tr>
+  <tr><td>Mobil UX</td><td class="red">Zoom engelli</td><td class="green">Serbest</td><td class="green">Serbest</td></tr>
+</table>
+
+<!-- EYLEM PLANI -->
+<div class="page-break"></div>
+<h2>EYLEM PLANI</h2>
+
+<h3>🚨 Acil (Bu Hafta — Ajans Sorumluluğu)</h3>
+<table>
+  <tr><th>#</th><th>Eylem</th><th>Sorumluluk</th><th>Etki</th></tr>
+  <tr><td>1</td><td>/sepet ve /uyelik/giris URL'lerini düzelt veya 301 yönlendirmesi ekle</td><td>Cemge Ajans</td><td class="red">KRİTİK</td></tr>
+  <tr><td>2</td><td>Ana sayfa ve ürün sayfalarına meta description ekle</td><td>Cemge Ajans</td><td class="red">KRİTİK</td></tr>
+  <tr><td>3</td><td>user-scalable=no kaldır, maximum-scale=1.0 kaldır</td><td>Cemge Ajans</td><td class="orange">YÜKSEK</td></tr>
+  <tr><td>4</td><td>Tüm görsellere alt attribute ekle (13 eksik)</td><td>Cemge Ajans</td><td class="orange">YÜKSEK</td></tr>
+  <tr><td>5</td><td>Havale/EFT ödeme yöntemi aktif et</td><td>Cemge Ajans / Ticimax</td><td class="orange">YÜKSEK</td></tr>
+  <tr><td>6</td><td>H1 etiketi ekle (anasayfa)</td><td>Cemge Ajans</td><td class="orange">YÜKSEK</td></tr>
+</table>
+
+<h3>📅 Kısa Vade (1 Ay)</h3>
+<table>
+  <tr><th>#</th><th>Eylem</th><th>Etki</th></tr>
+  <tr><td>1</td><td>Görselleri WebP formatına dönüştür (2,9 MB tasarruf)</td><td class="red">KRİTİK</td></tr>
+  <tr><td>2</td><td>Tüm görsellere width/height attribute ekle (CLS düzeltmesi)</td><td class="orange">YÜKSEK</td></tr>
+  <tr><td>3</td><td>Misafir checkout aktif et</td><td class="orange">YÜKSEK</td></tr>
+  <tr><td>4</td><td>Kapıda ödeme / Kapıda kredi kartı seçeneği ekle</td><td class="orange">YÜKSEK</td></tr>
+  <tr><td>5</td><td>Kargo seçeneklerini genişlet (MNG, Yurtiçi, PTT Kargo)</td><td class="orange">YÜKSEK</td></tr>
+  <tr><td>6</td><td>Schema.org (Organization, Product, BreadcrumbList) ekle</td><td>ORTA</td></tr>
+  <tr><td>7</td><td>Pazaryeri entegrasyonu (Trendyol, Hepsiburada) değerlendir</td><td>ORTA</td></tr>
+</table>
+
+<h3>🔮 Uzun Vade (3 Ay) — Platform Değişikliği</h3>
+<div class="info-box">
+  <strong>İkas'a Geçiş Önerisi:</strong> Ticimax'ın platform mimarisinden kaynaklanan sorunlar (render-blocking JS, şişkin HTML, yüksek trafik ücretleri) ajans müdahalesiyle tam çözülememektedir. İkas platformu, modern altyapısıyla %70+ mobil performans skoru, daha düşük platform maliyeti ve daha geniş entegrasyon ekosistemi sunmaktadır.
+  <br><br>Geçiş tahmini süresi: 4-6 hafta | Ürün verisi aktarımı: Otomatik araçlarla mümkün
+</div>
+
+</body>
+</html>

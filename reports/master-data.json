@@ -1,0 +1,245 @@
+{
+  "site_bilgisi": {
+    "url": "https://tarihicengelkoytatlicisi.com.tr",
+    "platform": "Ticimax",
+    "ajans": "Cemge Ajans",
+    "analiz_tarihi": "26 Şubat 2026"
+  },
+  "lighthouse": {
+    "onceki": {
+      "desktop": 53,
+      "mobile": 18
+    },
+    "guncel": {
+      "desktop": 47,
+      "mobile": 7,
+      "accessibility_desktop": 71,
+      "best_practices_desktop": 50,
+      "seo_desktop": 77,
+      "accessibility_mobile": 68,
+      "best_practices_mobile": 50,
+      "seo_mobile": 77
+    },
+    "degisim": {
+      "desktop": -6,
+      "mobile": -11
+    },
+    "metrikler": {
+      "desktop": {
+        "score": 47,
+        "accessibility": 71,
+        "best_practices": 50,
+        "seo": 77,
+        "fcp_ms": 3977.682000000001,
+        "lcp_ms": 5943.219000000001,
+        "tbt_ms": 188.10448845672772,
+        "cls": 0.116164,
+        "tti_ms": 6043.501500000002,
+        "ttfb_ms": 1897
+      },
+      "mobile": {
+        "score": 7,
+        "accessibility": 68,
+        "best_practices": 50,
+        "seo": 77,
+        "fcp_ms": 22511.47839999999,
+        "lcp_ms": 41866.908800000005,
+        "tbt_ms": 2851,
+        "cls": 0.38916799999999996,
+        "tti_ms": 42864.92318000001,
+        "ttfb_ms": 1873
+      }
+    },
+    "hedefler": {
+      "fcp_ms": 1800,
+      "lcp_ms": 2500,
+      "tti_ms": 3800,
+      "cls": 0.1,
+      "tbt_ms": 200,
+      "ttfb_ms": 600
+    }
+  },
+  "site_tarama": [
+    {
+      "sayfa": "Ana Sayfa",
+      "url": "https://tarihicengelkoytatlicisi.com.tr",
+      "durum": 200,
+      "sure_ms": 1892,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "Sepet",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/sepet",
+      "durum": 404,
+      "sure_ms": 546,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "Checkout",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/checkout",
+      "durum": 200,
+      "sure_ms": 938,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "Kargo Bilgi",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/kargo-ve-teslimat",
+      "durum": 200,
+      "sure_ms": 612,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "İletişim",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/iletisim",
+      "durum": 200,
+      "sure_ms": 645,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "Hakkımızda",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/hakkimizda",
+      "durum": 200,
+      "sure_ms": 553,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "Üye Girişi",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/uyelik/giris",
+      "durum": 404,
+      "sure_ms": 563,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "Sitemap",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/sitemap.xml",
+      "durum": 200,
+      "sure_ms": 447,
+      "hiz_degerlendirme": "✓ Hızlı"
+    },
+    {
+      "sayfa": "Robots",
+      "url": "https://tarihicengelkoytatlicisi.com.tr/robots.txt",
+      "durum": 200,
+      "sure_ms": 574,
+      "hiz_degerlendirme": "✓ Hızlı"
+    }
+  ],
+  "rakip": {
+    "url": "https://makbul.com",
+    "platform": "Özel/Shopify",
+    "lighthouse_desktop": 85,
+    "misafir_checkout": true,
+    "kargo_sayisi": 3
+  },
+  "kritik_sorunlar": [
+    {
+      "baslik": "Mobil Performans Çok Düşük",
+      "etki": "KRİTİK",
+      "cozum": "Görsel optimizasyonu, JS erteleme"
+    },
+    {
+      "baslik": "/sepet ve /uyelik/giris sayfaları 404",
+      "etki": "KRİTİK",
+      "cozum": "URL yönlendirmeleri"
+    },
+    {
+      "baslik": "SEO açıklamaları eksik",
+      "etki": "YÜKSEK",
+      "cozum": "Meta description ve H1 ekleme"
+    },
+    {
+      "baslik": "Kısıtlı ödeme yöntemleri",
+      "etki": "YÜKSEK",
+      "cozum": "Havale/EFT ve Kapıda Ödeme aktifleşmeli"
+    },
+    {
+      "baslik": "Düzen kayması (CLS yüksek)",
+      "etki": "YÜKSEK",
+      "cozum": "Görsellere width/height tanımlama"
+    }
+  ],
+  "ajans_hatalari": [
+    "Meta description boş bırakıldı",
+    "H1 etiketi eklenmedi",
+    "/sepet ve /uyelik/giris URL yönlendirmeleri hatalı",
+    "Görsellere alt attribute eklenmedi",
+    "user-scalable=no kısıtlaması kaldırılmadı",
+    "Görseller WebP'ye dönüştürülmedi",
+    "Ödeme yöntemleri aktif edilmedi",
+    "SEO ayarları tam yapılandırılmadı",
+    "Site teslim öncesi canlı test yapılmamış",
+    "Müşteriye admin panel eğitimi verilmedi"
+  ],
+  "ticimax_sorunlari": [
+    "JavaScript render-blocking olarak yükleniyor",
+    "Gereksiz büyük HTML dosya boyutu",
+    "Kullanılmayan JavaScript dosyaları",
+    "Cache politikası yetersiz",
+    "Trafik kotası aşımlarında ek ücretlendirme sistemi",
+    "Mobil uygulama/kullanıcı yönetim panelinin karmaşık olması",
+    "Entegrasyon süreçlerinde yaşanan gecikmeler",
+    "Müşteri destek hızında yavaşlık"
+  ],
+  "ticimax_sikayetleri": [
+    {
+      "konu": "Trafik Ücretleri ve Panel Karartma",
+      "siklik": "Çok Yüksek"
+    },
+    {
+      "konu": "İptal ve İade Süreçlerinde Yanıtsızlık",
+      "siklik": "Yüksek"
+    },
+    {
+      "konu": "Vaat Edilen Entegrasyonların Çalışmaması",
+      "siklik": "Yüksek"
+    },
+    {
+      "konu": "Maliyetli Destek Paketlerinden Verim Alınamaması",
+      "siklik": "Orta"
+    },
+    {
+      "konu": "Kullanımı Zor ve Hantal Admin Paneli",
+      "siklik": "Orta"
+    },
+    {
+      "konu": "Kurulum Gecikmesi ve Sözleşmeye Uymayan Teslimatlar",
+      "siklik": "Yüksek"
+    },
+    {
+      "konu": "Eksik Hizmet Nedeniyle Cayma Hakkının Kullandırılmaması",
+      "siklik": "Orta"
+    },
+    {
+      "konu": "Sık Sorulan Manuel Sipariş Kesinti/Fatura Hataları",
+      "siklik": "Orta"
+    }
+  ],
+  "ticimax_sikayet_istatistik": {
+    "sayfa_sayisi": "36+",
+    "tahmini_toplam": "2500+",
+    "en_son_sikayet": "Bugün"
+  },
+  "eylem_plani": {
+    "acil": [
+      "Sepet ve Giriş sayfası URL'lerini düzelt (404 hatası giderilmeli)",
+      "Ana sayfa ve ürün sayfalarına meta açıklamaları (description) ekle",
+      "Sadece Kredi Kartı değil, Havale/EFT ödeme yöntemini aç",
+      "Mobil görünümü kitleyici user-scalable=no engelini kaldır",
+      "Anasayfaya H1 etiketi yerleştir"
+    ],
+    "kisa_vade": [
+      "Görsellerin tamamını WebP formatına çevir",
+      "Resim boyutlarını ve width/height property'lerini belirle (CLS için)",
+      "Misafir olarak alışveriş yapabilme özelliğini aktif et",
+      "Kargo firması seçeneklerini 2 veya 3'e çıkart (Yurtiçi vb.)",
+      "Trendyol / Hepsiburada pazaryeri aktarımlarını kur"
+    ],
+    "uzun_vade": [
+      "İkas altyapısına geçiş maliyet çalışması yap",
+      "Ticimax sözleşmesi iade ve cayma sürecini başlat",
+      "SEO odaklı modern e-ticaret temasına geç",
+      "Yeni platformda otomatik fatura entegrasyonu sağla",
+      "Mobil uygulama destekli yönetim modeline yönel"
+    ]
+  }
+}

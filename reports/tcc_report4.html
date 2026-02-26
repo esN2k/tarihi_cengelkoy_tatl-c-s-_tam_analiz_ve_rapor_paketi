@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page { margin: 1.8cm; size: A4; }
+  body { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 12pt; color: #111; line-height: 1.7; }
+  .header { background: #8B0000; color: white; padding: 22px 28px; border-radius: 6px; margin-bottom: 24px; }
+  .header h1 { margin: 0; font-size: 22pt; color: white; }
+  .header p { margin: 6px 0 0; font-size: 11pt; opacity: 0.85; }
+  .status-box { border: 3px solid #e65c00; background: #fff8f0; border-radius: 8px; padding: 16px 20px; margin: 20px 0; text-align: center; }
+  .status-box .emoji { font-size: 28pt; }
+  .status-box .text { font-size: 14pt; font-weight: bold; color: #e65c00; }
+  .score-grid { display: table; width: 100%; margin: 20px 0; }
+  .score-cell { display: table-cell; text-align: center; width: 33%; padding: 10px; vertical-align: top; }
+  .big-num { font-size: 52pt; font-weight: 900; line-height: 1; }
+  .score-label { font-size: 11pt; color: #555; margin-top: 4px; }
+  .red-num { color: #cc0000; }
+  .orange-num { color: #e65c00; }
+  .section { margin: 24px 0; }
+  .section h2 { font-size: 14pt; border-bottom: 2px solid #333; padding-bottom: 6px; margin-bottom: 12px; }
+  .funnel { background: #f5f5f5; border-radius: 8px; padding: 16px 20px; font-size: 13pt; text-align: center; line-height: 2.2; }
+  .funnel .arrow { color: #888; }
+  .action-grid { display: table; width: 100%; margin: 16px 0; }
+  .action-cell { display: table-cell; width: 33%; padding: 6px 8px; vertical-align: top; }
+  .action-box { border: 2px solid #333; border-radius: 6px; padding: 12px; text-align: center; min-height: 80px; }
+  .action-box .num { font-size: 20pt; font-weight: bold; color: #8B0000; }
+  .action-box .title { font-size: 10pt; font-weight: bold; margin: 4px 0; }
+  .action-box .desc { font-size: 9pt; color: #555; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Siteniz Hakkında Önemli Bilgilendirme</h1>
+  <p>tarihicengelkoytatlicisi.com.tr — Teknik Durum Özeti | 26 Şubat 2026</p>
+</div>
+
+<div class="status-box">
+  <div class="emoji">⚠️</div>
+  <div class="text">Site çalışıyor — ama ciddi sorunlar var</div>
+  <div style="font-size: 11pt; color: #555; margin-top: 6px;">Google'ın bağımsız ölçümüne göre siteniz hızlı yüklenme testini geçemiyor.</div>
+</div>
+
+<div class="section">
+  <h2>📊 Rakamlar</h2>
+  <div class="score-grid">
+    <div class="score-cell">
+      <div class="big-num red-num">30</div>
+      <div style="font-size:9pt; color:#cc0000; font-weight:bold;">/ 100</div>
+      <div class="score-label">Mobil Puan<br><small>(Hedef: 90+)</small></div>
+    </div>
+    <div class="score-cell">
+      <div class="big-num orange-num">66</div>
+      <div style="font-size:9pt; color:#e65c00; font-weight:bold;">/ 100</div>
+      <div class="score-label">Bilgisayar Puanı<br><small>(Hedef: 90+)</small></div>
+    </div>
+    <div class="score-cell">
+      <div class="big-num red-num">10,4</div>
+      <div style="font-size:9pt; color:#cc0000; font-weight:bold;">saniye</div>
+      <div class="score-label">Mobil Yükleme<br><small>(Hedef: 2,5 sn)</small></div>
+    </div>
+  </div>
+  <p style="font-size:9.5pt; color:#666; text-align:center;">Kaynak: Google PageSpeed Insights — 26 Şubat 2026, 08:50</p>
+</div>
+
+<div class="section">
+  <h2>💡 Bu Ne Demek?</h2>
+  <div class="funnel">
+    <div><strong>100 kişi</strong> sitenize telefonda giriyor</div>
+    <div class="arrow">▼</div>
+    <div style="color:#e65c00;"><strong>~53 kişi</strong> yavaşlık yüzünden 3 saniye içinde çıkıyor</div>
+    <div class="arrow">▼</div>
+    <div style="color:#cc0000;"><strong>~47 kişi</strong> kalıyor, ama sepete ekleme / ödeme zorluğu var</div>
+    <div class="arrow">▼</div>
+    <div style="color:#1a7a1a;"><strong>Gerçek alışveriş yapan: tahminen 5-10 kişi</strong></div>
+  </div>
+  <p style="font-size:10pt; color:#555; margin-top:10px;">
+    Google araştırması: Sayfa yükleme 1 saniyeden 3 saniyeye çıktığında <strong>müşteri kaybı %32 artıyor</strong>. 
+    10 saniyede kaybedilen müşteri oranı <strong>%123</strong>. Sitenizin mobil yükleme süresi <strong>10,4 saniye.</strong>
+  </p>
+</div>
+
+<div class="section">
+  <h2>🔍 Ek Tespitler</h2>
+  <table style="font-size:10.5pt; width:100%; border-collapse:collapse;">
+    <tr><td style="padding:6px 0; border-bottom:1px solid #eee;">❌</td><td style="padding:6px 8px; border-bottom:1px solid #eee;"><strong>Sepet sayfası 404 hatası veriyor</strong> — müşteriler sepete ulaşamıyor</td></tr>
+    <tr><td style="padding:6px 0; border-bottom:1px solid #eee;">❌</td><td style="padding:6px 8px; border-bottom:1px solid #eee;"><strong>Google'da site açıklaması yok</strong> — meta description boş</td></tr>
+    <tr><td style="padding:6px 0; border-bottom:1px solid #eee;">❌</td><td style="padding:6px 8px; border-bottom:1px solid #eee;"><strong>Sadece kredi kartı ile ödeme alınıyor</strong> — havale / kapıda ödeme yok</td></tr>
+    <tr><td style="padding:6px 0; border-bottom:1px solid #eee;">❌</td><td style="padding:6px 8px; border-bottom:1px solid #eee;"><strong>Mobil ekranda içerik kayıyor</strong> — kullanıcılar yanlış yere tıklıyor</td></tr>
+    <tr><td style="padding:6px 0;">⚠️</td><td style="padding:6px 8px;">SSL sertifikası 3 Mayıs 2026'da doluyor — öncesinde yenilenmeli</td></tr>
+  </table>
+</div>
+
+<div class="section">
+  <h2>✅ Ne Yapalım?</h2>
+  <div class="action-grid">
+    <div class="action-cell">
+      <div class="action-box">
+        <div class="num">1</div>
+        <div class="title">Ajanstan Eksikleri Talep Et</div>
+        <div class="desc">7 iş günü içinde yazılı bildirim gönder. Sepet hatası, meta açıklama, ödeme yöntemleri düzeltilmeli.</div>
+      </div>
+    </div>
+    <div class="action-cell">
+      <div class="action-box">
+        <div class="num">2</div>
+        <div class="title">Platform Değişikliği Değerlendir</div>
+        <div class="desc">Bazı sorunlar Ticimax altyapısından kaynaklanıyor. İkas platformuna geçiş 4-6 haftada tamamlanabilir.</div>
+      </div>
+    </div>
+    <div class="action-cell">
+      <div class="action-box">
+        <div class="num">3</div>
+        <div class="title">Teknik Destek Al</div>
+        <div class="desc">Geçiş ve iyileştirme sürecinde bağımsız teknik destek alınması önerilir. Bu raporu hazırlayan ekiple çalışılabilir.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p style="font-size:8.5pt; color:#888; margin-top:20px; text-align:center;">
+  Bu rapor Google PageSpeed Insights, HTTP analizi ve admin panel incelemesine dayanmaktadır. 
+  Sonuçlar https://pagespeed.web.dev adresinden bağımsız olarak doğrulanabilir.
+</p>
+
+</body>
+</html>

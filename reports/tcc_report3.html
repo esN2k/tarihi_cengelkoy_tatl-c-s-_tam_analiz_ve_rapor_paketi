@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page { margin: 2cm; size: A4; }
+  body { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10.5pt; color: #222; line-height: 1.6; }
+  h1 { font-size: 20pt; color: #c0392b; }
+  h2 { font-size: 13pt; color: #c0392b; border-bottom: 2px solid #c0392b; padding-bottom: 4px; margin-top: 24px; }
+  h3 { font-size: 11pt; color: #333; }
+  .cover { text-align: center; padding-top: 60px; page-break-after: always; }
+  .page-break { page-break-before: always; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 9.5pt; }
+  th { background: #2c3e50; color: white; padding: 7px 10px; text-align: left; }
+  td { padding: 6px 10px; border-bottom: 1px solid #ddd; vertical-align: top; }
+  tr:nth-child(even) td { background: #f9f9f9; }
+  .red { color: #cc0000; font-weight: bold; }
+  .green { color: #1a7a1a; font-weight: bold; }
+  .orange { color: #e65c00; font-weight: bold; }
+  .problem-box { background: #ffeaea; border-left: 5px solid #c0392b; padding: 10px 14px; margin: 12px 0; }
+  .good-box { background: #eafaf1; border-left: 5px solid #27ae60; padding: 10px 14px; margin: 12px 0; }
+  .big-score { font-size: 36pt; font-weight: bold; text-align: center; padding: 10px; }
+  .score-grid { display: table; width: 100%; }
+  .score-cell { display: table-cell; text-align: center; padding: 10px; }
+</style>
+</head>
+<body>
+
+<!-- KAPAK -->
+<div class="cover">
+  <h1>Neden Ticimax Sorun?</h1>
+  <div style="font-size: 13pt; color: #555; margin: 16px 0;">Platform Analizi ve İkas Geçiş Önerisi</div>
+  <div style="font-size: 10pt; color: #888; margin-top: 30px;">tarihicengelkoytatlicisi.com.tr için hazırlanmıştır<br>26 Şubat 2026</div>
+</div>
+
+<!-- SAYFA 1: TİCİMAX SORUN ANALİZİ -->
+<h2>TİCİMAX PLATFORM SORUNU</h2>
+
+<h3>Performans Verileri</h3>
+<p>Google PageSpeed Insights (26 Şub 2026) ölçümlerine göre:</p>
+
+<div style="text-align:center; margin: 20px 0;">
+  <div style="display:inline-block; margin: 10px 20px;">
+    <div style="font-size: 42pt; font-weight: bold; color: #cc0000;">30</div>
+    <div style="font-size: 11pt; color: #555;">Mobil Performans<br><small>(100 üzerinden)</small></div>
+  </div>
+  <div style="display:inline-block; margin: 10px 20px;">
+    <div style="font-size: 42pt; font-weight: bold; color: #e65c00;">66</div>
+    <div style="font-size: 11pt; color: #555;">Desktop Performans<br><small>(100 üzerinden)</small></div>
+  </div>
+  <div style="display:inline-block; margin: 10px 20px;">
+    <div style="font-size: 42pt; font-weight: bold; color: #cc0000;">10,4s</div>
+    <div style="font-size: 11pt; color: #555;">Mobil Yükleme<br><small>(hedef: 2,5s)</small></div>
+  </div>
+</div>
+
+<div class="problem-box">
+  <strong>Bu neden Ticimax'ın yapısal sorunu?</strong><br>
+  Ticimax, .NET tabanlı eski bir altyapıyla çalışmaktadır. Platform, JavaScript dosyalarını async/defer kullanmadan yüklüyor (render-blocking), 413 KB kullanılmayan JavaScript gönderiliyor, 111 KB kullanılmayan CSS var ve sayfa başına HTML boyutu 664 KB'ı aşıyor. Bunlar ajansın değil, platformun mimarisi kaynaklı sorunlardır.
+</div>
+
+<h3>Şikayetvar'dan Ticimax Hakkında En Sık Tekrarlayan Şikayetler (2025-2026)</h3>
+<table>
+  <tr><th>#</th><th>Şikayet Konusu</th><th>Etki</th></tr>
+  <tr><td>1</td><td><strong>Trafik ücretlendirmesi</strong> — Paket ücreti dışında extra trafik bedeli alınıyor; müşteriler panel erişimini kaybediyor</td><td class="red">Mali Kayıp</td></tr>
+  <tr><td>2</td><td><strong>Panel kullanım zorluğu</strong> — Karmaşık arayüz, ürün yükleme/düzenleme süreci zor, mobil uygulama işlevsiz</td><td class="orange">Verimlilik Kaybı</td></tr>
+  <tr><td>3</td><td><strong>Sözleşmeye uymayan hizmetler</strong> — Satış öncesi verilen sözler yerine getirilmiyor (220.000 TL ödeyen mağdur örneği)</td><td class="red">Güven Kaybı</td></tr>
+  <tr><td>4</td><td><strong>İade taleplerinin yanıtsız bırakılması</strong> — Cayma hakkı kullanımında bürokratik engeller çıkarılıyor</td><td class="red">Hukuki Risk</td></tr>
+  <tr><td>5</td><td><strong>Kurulum gecikmesi</strong> — Panel satın alındıktan sonra haftalarca kurulmuyor, destek ulaşılamıyor</td><td class="orange">Zaman Kaybı</td></tr>
+  <tr><td>6</td><td><strong>Pazaryeri entegrasyonu sorunları</strong> — Trendyol/Hepsiburada aktarımı çalışmıyor ya da eksik</td><td class="red">Satış Kaybı</td></tr>
+  <tr><td>7</td><td><strong>Mobil uygulama işlevsiz</strong> — Ticimax mobil yönetim uygulaması çalışmıyor, siparişler takip edilemiyor</td><td class="orange">Yönetim Güçlüğü</td></tr>
+</table>
+
+<!-- SAYFA 2: İKAS vs TİCİMAX -->
+<div class="page-break"></div>
+<h2>İKAS vs TİCİMAX — 10 KRİTİK FARK</h2>
+
+<table>
+  <tr>
+    <th style="width:30%;">Kriter</th>
+    <th style="width:35%; background:#c0392b;">Ticimax (Mevcut)</th>
+    <th style="width:35%; background:#27ae60;">İkas (Öneri)</th>
+  </tr>
+  <tr>
+    <td><strong>Mobil Performans</strong></td>
+    <td class="red">~30/100 (kritik)</td>
+    <td class="green">70-85/100 (iyi)</td>
+  </tr>
+  <tr>
+    <td><strong>Platform Altyapısı</strong></td>
+    <td>.NET tabanlı, eski mimari</td>
+    <td class="green">Modern, cloud-native, headless hazır</td>
+  </tr>
+  <tr>
+    <td><strong>Mobil Uygulama</strong></td>
+    <td class="red">İşlevsiz (Şikayetvar'da yaygın şikayet)</td>
+    <td class="green">Çalışan, güncel iOS/Android uygulaması</td>
+  </tr>
+  <tr>
+    <td><strong>Kargo Entegrasyonları</strong></td>
+    <td class="orange">Sınırlı</td>
+    <td class="green">MNG, Yurtiçi, PTT, Aras, UPS + 20+ seçenek</td>
+  </tr>
+  <tr>
+    <td><strong>Pazaryeri Entegrasyonu</strong></td>
+    <td class="orange">Trendyol, Hepsiburada (sorunlu)</td>
+    <td class="green">Trendyol, HB, Çiçeksepeti, Amazon TR, N11</td>
+  </tr>
+  <tr>
+    <td><strong>Ödeme Yöntemleri</strong></td>
+    <td class="orange">Sınırlı aktif seçenek</td>
+    <td class="green">iyzico, PayTR, Stripe, havale, kapıda ödeme</td>
+  </tr>
+  <tr>
+    <td><strong>SEO Altyapısı</strong></td>
+    <td class="red">Temel, şişkin HTML, meta yönetimi zayıf</td>
+    <td class="green">Schema.org yerleşik, clean HTML, hızlı SSR</td>
+  </tr>
+  <tr>
+    <td><strong>Kullanım Kolaylığı</strong></td>
+    <td class="red">Karmaşık panel (Şikayetvar'da 1. şikayet)</td>
+    <td class="green">Modern, sezgisel arayüz</td>
+  </tr>
+  <tr>
+    <td><strong>Trafik Ücretlendirmesi</strong></td>
+    <td class="red">Var — paket üstü ek trafik ücreti</td>
+    <td class="green">Yok — trafik dahil</td>
+  </tr>
+  <tr>
+    <td><strong>Destek Kalitesi</strong></td>
+    <td class="red">Gecikmeli, yetersiz (Şikayetvar verisi)</td>
+    <td class="green">7/24 chat + Türkçe destek ekibi</td>
+  </tr>
+</table>
+
+<!-- SAYFA 3: GEÇİŞ ÖNERİSİ -->
+<div class="page-break"></div>
+<h2>İKAS'A GEÇİŞ — ZAMaN ÇİZELGESİ VE MALİYET</h2>
+
+<h3>Geçiş Süreci (Tahmini 4-6 Hafta)</h3>
+<table>
+  <tr><th>Hafta</th><th>Yapılacak İşlem</th></tr>
+  <tr><td>Hafta 1</td><td>İkas hesap açılışı, paket seçimi, alan adı bağlama, tema seçimi</td></tr>
+  <tr><td>Hafta 2</td><td>Ürün verilerinin Ticimax'tan İkas'a aktarımı (otomatik araçlarla), kategori yapısı kurulumu</td></tr>
+  <tr><td>Hafta 3</td><td>Ödeme yöntemleri, kargo entegrasyonları, e-fatura bağlantısı</td></tr>
+  <tr><td>Hafta 4</td><td>Tema özelleştirme, SEO ayarları, meta taglar, görsellerin WebP'ye çevrilmesi</td></tr>
+  <tr><td>Hafta 5</td><td>Test siparişleri, checkout akışı testi, mobil görünüm testi</td></tr>
+  <tr><td>Hafta 6</td><td>301 yönlendirmeleri, DNS geçişi, canlıya alma</td></tr>
+</table>
+
+<h3>Maliyet Karşılaştırması (Tahmini)</h3>
+<table>
+  <tr><th>Kalem</th><th>Ticimax (Mevcut)</th><th>İkas (Geçiş Sonrası)</th></tr>
+  <tr><td>Platform aboneliği (yıllık)</td><td>~15.000-25.000 ₺</td><td class="green">~12.000-20.000 ₺</td></tr>
+  <tr><td>Trafik ücreti (ek)</td><td class="red">Var (değişken)</td><td class="green">Yok</td></tr>
+  <tr><td>Geçiş / kurulum maliyeti</td><td>—</td><td>Tek seferlik ~5.000-10.000 ₺</td></tr>
+  <tr><td>Pazaryeri entegrasyonu</td><td class="orange">Ek ücret olabilir</td><td class="green">Dahil</td></tr>
+  <tr><td><strong>Toplam 1. yıl (tahmini)</strong></td><td class="red"><strong>25.000-40.000 ₺</strong></td><td class="green"><strong>17.000-30.000 ₺</strong></td></tr>
+</table>
+
+<h3>Geçişten Beklenen Kazanımlar</h3>
+<div class="good-box">
+  <ul>
+    <li><strong>Mobil performans artışı:</strong> 30 → 70+ (tahmini) — doğrudan dönüşüm artışı</li>
+    <li><strong>Daha fazla ödeme seçeneği</strong> → sepetten ayrılma oranı azalır</li>
+    <li><strong>Pazaryeri entegrasyonu</strong> → Trendyol, Hepsiburada kanalları açılır</li>
+    <li><strong>Trafik ücreti yok</strong> → büyüme döneminde ekstra maliyet sıfır</li>
+    <li><strong>Kolay panel yönetimi</strong> → ekip zamandan tasarruf eder</li>
+    <li><strong>SEO iyileşmesi</strong> → organik trafik artar, Google Ads dönüşümü iyileşir</li>
+  </ul>
+</div>
+
+</body>
+</html>
