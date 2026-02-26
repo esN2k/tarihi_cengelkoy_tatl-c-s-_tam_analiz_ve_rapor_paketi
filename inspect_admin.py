@@ -12,10 +12,6 @@ async def main():
         print("Navigating to admin panel...")
         await page.goto("https://tarihicengelkoytatlicisi.com.tr/admin")
         await page.wait_for_load_state("networkidle")
-
-        print("Logging in...")
-        await page.fill('input[type="email"], input[name="email"], input[id*="email"]', "cengelkoytatlicisi3431@gmail.com")
-        await page.fill('input[type="password"], input[name="password"], input[id*="password"]', "35UZIL1Y")
         
         # Take a screenshot before clicking login
         await page.screenshot(path="reports/admin_screenshots/1_login_page.png")
