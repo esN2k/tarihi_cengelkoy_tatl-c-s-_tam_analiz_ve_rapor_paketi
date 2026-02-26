@@ -43,7 +43,7 @@ def main():
         try:
             from scripts.site_tarama import main as tarama_main
             tarama_main()
-        except Exception as e:
+        except (ImportError, OSError) as e:
             print(f"Site taraması sırasında hata: {e}")
             print("Site taraması atlanıyor, PDF oluşturma devam edecek.")
     else:

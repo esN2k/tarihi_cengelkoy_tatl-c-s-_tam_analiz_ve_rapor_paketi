@@ -39,7 +39,7 @@ def tara_siteleri(urls=None):
                 "time_ms": elapsed,
                 "ok": r.status_code == 200,
             })
-        except Exception:
+        except requests.RequestException:
             elapsed = round((time.time() - start) * 1000)
             results.append({
                 "url": url,
@@ -56,7 +56,7 @@ def sitemap_url_sayisi(sitemap_url="https://tarihicengelkoytatlicisi.com.tr/site
         r = requests.get(sitemap_url, timeout=15)
         if r.status_code == 200:
             return r.text.count("<loc>")
-    except Exception:
+    except requests.RequestException:
         pass
     return None
 

@@ -428,8 +428,8 @@ def olustur_teknik_rapor(output_dir):
         "Render-blocking kaynakların ertelenmesi",
         "Meta tag'lerin düzenlenmesi",
     ]
-    for a in acil:
-        story.append(Paragraph(f"1. {a}", styles["BodyCustom"]))
+    for idx, a in enumerate(acil, 1):
+        story.append(Paragraph(f"{idx}. {a}", styles["BodyCustom"]))
 
     story.append(Spacer(1, 0.3 * cm))
     story.append(Paragraph("Kısa Vade - 1 Ay", styles["HeadingCustom"]))
@@ -440,8 +440,8 @@ def olustur_teknik_rapor(output_dir):
         "Structured data (Schema.org) eklenmesi",
         "Panel eğitimi ve dokümantasyon teslimi",
     ]
-    for k in kisa_vade:
-        story.append(Paragraph(f"1. {k}", styles["BodyCustom"]))
+    for idx, k in enumerate(kisa_vade, 1):
+        story.append(Paragraph(f"{idx}. {k}", styles["BodyCustom"]))
 
     story.append(Spacer(1, 0.3 * cm))
     story.append(Paragraph("Platform Değişikliği Önerisi", styles["HeadingCustom"]))
