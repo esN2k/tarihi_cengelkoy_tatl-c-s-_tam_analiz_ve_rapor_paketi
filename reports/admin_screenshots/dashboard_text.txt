@@ -1,0 +1,149 @@
+iyzico Sanal POS Başvurusu
+Hepsipay Üye İşyeri Başvuru Formu
+Uygulama Marketi
+A
+Anasayfa
+Ürünler
+Siparişler
+Modüller
+Üyeler / Bayiler
+Tasarım
+SEO
+Raporlar
+Entegrasyonlar
+Kampanyalar
+Ayarlar
+Sipariş İstatistikleri
+26.02.2026 - 26.02.2026
+	Toplam Ciro
+₺1.199,8500	Sepet Ortalaması
+₺1.199,8500	Sipariş Adedi
+1
+TicimaxWeb	₺1.199,8500	₺1.199,8500	1
+Sepet İstatistikleri
+Sepet Adet	5
+Sepet Ürün Adet	24
+Sepet Tutarı	₺13.703,8900
+Sepet Ortalaması	₺2.740,7780
+Sipariş Karşılaştırma Grafiği
+11.02.2026 - 26.02.2026
+Sipariş Adedi
+Ciro
+Adet
+Ciro
+Cari
+Son 15 Günün İstatistikleri
+11.02
+12.02
+13.02
+14.02
+15.02
+16.02
+17.02
+18.02
+19.02
+20.02
+21.02
+22.02
+23.02
+24.02
+25.02
+26.02
+0 Adet
+3 Adet
+6 Adet
+9 Adet
+12 Adet
+0.00 TRY
+6,000.00 TRY
+12,000.00 TRY
+18,000.00 TRY
+24,000.00 TRY
+Son Siparişler
+26.02.2026 11:01
+Sipariş No	Müşteri	Toplam Fiyat
+
+389PH5655O
+	
+NEBİ Karapınar
+	₺1.199,8500
+
+589QC3698B
+	
+İlker Çakır
+	₺1.450,0000
+
+168KE8594V
+	
+Metin Yazıcı
+	₺4.275,0000
+
+362SQ3582J
+	
+Reyyan büyüktün
+	₺2.500,0000
+
+832BY2512A
+	
+Hikmet Bayındır
+	₺2.500,0000
+İstatistikler
+26.02.2026 08:50
+Satıştaki Toplam Ürün 	101
+Satıştaki Toplam Stok Adedi 	25327973
+Satıştaki Toplam Kategori 	9
+Satıştaki Toplam Marka 	2
+Toplam Üye 	35
+Cevap Bekleyen Mesajlar
+26.02.2026 08:50
+Bugün İçin Cevap Bekleyen Müşterileriniz Yoktur
+Ödeme Tipine Göre Siparişler
+11.02.2026 - 26.02.2026
+Kredi Kartı:27,124.80 TRYKredi Kartı:27,124.80 TRY
+En Çok Satan Ürünler
+Bugün
+ 
+Bu Ay
+ 
+Son 3 Ay
+	
+Makedemya Fındık
+Ürün Kartı ID : 26
+	
+₺1.199,8500
+Satış
+Lisans Bilgileri
+ 
+Duyurular
+ 
+Güncellemeler
+ 
+Sipariş Hatırlatma
+Paket Adı:	Premier Paket
+Lisans Numarası:	46723e65-bda4-43d4-a184-54da21b77e68
+Paket Başlangıç Tarihi:	23.01.2026
+Paket Bitiş Tarihi:	23.04.2027
+Yazılım Versiyonu:	8.13.642.0
+Trafik Bilgisi:	Detay
+
+6%
+Ürün Yönetimi
+Siparişler Listesi
+Havale / Eft Bildirimleri
+Üye Yönetimi
+Klasik Raporlar
+Stok Raporu
+Kampanya Sihirbazı
+Genel Ayarlar
+Blok İçerik Yönetimi
+.
+Güvenlik ayarlarınızı inceleyin
+
+Güvenlik ayarlarınızın güncel olduğunu doğrulayarak hesabınızın güvenliğini sağlayın.
+
+İKİ ADIMLI KİMLİK DOĞRULAMA
+
+İki adımlı kimlik doğrulamayı etkinleştirmediniz. Fazladan bir güvenlik katmanı ekleyin. Böylece, hesabınıza yalnızca siz erişebilirsiniz. Başka bir kullanıcı parolanızı ele geçirse bile hesabınıza erişim sağlayamaz.
+
+Güvenlik ayarlarına git
+Bir dahaki sefere bana hatırlat
